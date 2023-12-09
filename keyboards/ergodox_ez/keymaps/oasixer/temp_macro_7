@@ -1,0 +1,10 @@
+      SEND_STRING(SS_LSFT(SS_TAP(X_S)) SS_DELAY(10)
+                  SS_TAP(X_A) SS_DELAY(10)
+                  SS_TAP(X_N) SS_DELAY(10)
+                  SS_TAP(X_SPACE) SS_DELAY(10)
+                  SS_LSFT(SS_TAP(X_J)) SS_DELAY(10)
+                  SS_TAP(X_O) SS_DELAY(10)
+                  SS_TAP(X_S) SS_DELAY(10)
+                  SS_TAP(X_E) SS_DELAY(10)
+      );
+    }

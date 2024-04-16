@@ -417,8 +417,8 @@
 // `string` arguments must not be parenthesized
 #define SS_LCTL(string) SS_DOWN(X_LCTL) string SS_UP(X_LCTL)
 // #define SS_LSFT(string) SS_DOWN(X_LSFT) string SS_UP(X_LSFT)
-#define SS_LSFT(string) SS_DELAY(5) SS_DOWN(X_LSFT) string SS_DELAY(10) SS_UP(X_LSFT) SS_DELAY(8)
-#define SS_LALT(string) SS_DELAY(5) SS_DOWN(X_LALT) string SS_DELAY(10) SS_UP(X_LALT)
+#define SS_LSFT(string) SS_DELAY(30) SS_DOWN(X_LSFT) string SS_DELAY(30) SS_UP(X_LSFT) SS_DELAY(8)
+#define SS_LALT(string) SS_DELAY(30) SS_DOWN(X_LALT) string SS_DELAY(30) SS_UP(X_LALT) SS_DELAY(8)
 #define SS_LGUI(string) SS_DOWN(X_LGUI) string SS_UP(X_LGUI)
 #define SS_LOPT(string) SS_LALT(string)
 #define SS_LCMD(string) SS_LGUI(string)

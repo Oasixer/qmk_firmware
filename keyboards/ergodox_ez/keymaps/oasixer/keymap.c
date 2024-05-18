@@ -142,7 +142,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //                                                                                                                 KC_PAGE_UP,     KC_TRANSPARENT,
     //                                                                                 KC_LEFT_CTRL,   KC_LEFT_ALT,    KC_LEFT_GUI,    KC_TRANSPARENT, KC_LEFT_GUI,    KC_SPACE
   ),
-  [1] = LAYOUT_ergodox_pretty( // Layer 1: GAMING MODE
+  [1] = LAYOUT_ergodox_pretty( // Layer 1: GAMING MODE game mode
 //,--------.  ,--------.  ,--------.  ,--------.  ,--------.  ,--------.  ,--------.        ,-------.  ,--------.  ,--------.  ,--------.  ,--------.  ,--------.  ,--------.
    TSPT,       TSPT,       TSPT,       TSPT,       TSPT,       TSPT,       TSPT,   /*     */TSPT,       TSPT,       TSPT,       TSPT,       TSPT,       TSPT,       TSPT,
 //| ESCAPE |  | Abv.Q  |  | Abv.W  |  | Abv.E  |  | Abv.R  |  | Abv.T  |  | Abv.   |       | Ab.PgUp|  | Abv.Y  |  | Abv.U  |  | Abv.I  |  | Abv.O  |  | Abv.P  |  | Abv.Qt |
@@ -456,9 +456,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 //| LP2    |  | Q      |  | W      |  | E      |  | R      |  | T      |  | jeff   |       |   PgUp |  | Y      |  | U      |  | I      |  | O      |  | P      |  | '''''  |
 //| (FKEYS)|  |        |  |        |  |        |  |        |  |        |  |        |       |        |  |        |  |        |  |        |  |        |  |        |  |        |
 //|--------|  |--------|  |--------|  |--------|  |--------|  |--------|  |        |       |        |  |--------|  |--------|  |--------|  |--------|  |--------|  |--------|
-   MO(2),      TSPT,       TSPT,       ST_MACRO_32,ST_MACRO_33,TSPT,      /*-------|       |_______*/   TSPT,       TSPT,       TSPT,       TSPT,       TSPT,       KC_RSHIFT,
+   MO(2),      TSPT,       TSPT,       ST_MACRO_32,ST_MACRO_33,TSPT,      /*-------|       |_______*/   TSPT,       ST_MACRO_35,ST_MACRO_36,TSPT,       TSPT,       KC_RSHIFT,
 //| LP1    |  | A      |  | S      |  | D      |  | F      |  | G      |  |        |       |        |  | H      |  | J      |  | K      |  | L      |  | ;;;;;  |  | RSHFT  |
-//| (CAPS) |  |        |  |        |  |        |  |        |  |        |  |        |       |        |  |        |  |        |  |        |  |        |  |        |  |        |
+//| (CAPS) |  |        |  |        |  |        |  |        |  |        |  |        |       |        |  |        |  |font size -/ +      |  |        |  |        |  |        |
 //|--------|  |--------|  |--------|  |--------|  |--------|  |--------|  |        |       |        |  |--------|  |--------|  |--------|  |--------|  |--------|  |--------|
    KC_LSHIFT,  TSPT,       TSPT,       TSPT,       ST_MACRO_34,TSPT,       TSPT,   /*     */TSPT,      TSPT,       TSPT,       TSPT,       TSPT,       TSPT,       TSPT,
 //| LSHFT  |  | Z      |  | X      |  | C      |  | V      |  | B      |  |        |       |   PgDn |  | N      |  | M      |  |,,,,,   |  | .....  |  | /////  |  | LCTRL  |

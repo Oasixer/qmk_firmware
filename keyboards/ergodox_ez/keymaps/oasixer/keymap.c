@@ -119,7 +119,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 //| LSHFT  |  | Z      |  | X      |  | C      |  | V      |  | B      |  |        |       |   PgDn |  | N      |  | M      |  |,,,,,   |  | .....  |  | /////  |  | LCTRL '
 //|        |  |        |  |        |  |        |  |        |  |        |  |        |       |        |  |        |  |        |  |        |  |        |  |        |  |        |
 //|--------|  |--------|  |--------|  |--------|  |--------|  |--------|  |--------|       |--------|  |________|  |--------|  |--------|  |--------|  |--------|  |--------|
-   TG(1),      TSPT,       MO(6),      MO(5),      MO(3),                                                           MO(4),      KC_LCTRL,   KC_F16,     KC_RABK,    TSPT,
+   TSPT,      TSPT,       MO(6),      MO(5),      MO(3),                                                           MO(4),      KC_LCTRL,   KC_F16,     KC_RABK,    TSPT,
 //|        |  |        |  | LT3    |  | LT2[B] |  | LT1    |                                                       | RT1(nums  | LCTRL  |  | f16    |  |        |  |        |
 //|        |  |        |  |(macros)|  |(harpoon|  |        |                                                       | (&LT2M))  |        |  |        |  |        |  |        |
 //|--------|  |--------|  |--------|  |/TST)---|  |--------|                                                       |--------|  |--------|  |------- |  |--------|  |--------|
@@ -133,18 +133,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                    KC_LCTRL,   KC_LALT,    KC_LWIN, /*     */TSPT,       KC_LWIN,    KC_SPACE
 //                                                | LCTRL  |  | LALT   |  | LWIN    |       |        |  | LWIN   |  | SPACE   |
 //                                                |--------|  |--------|  |---------|       |--------|  |--------|  |---------|
-    // KC_ESCAPE, /* stuff */     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
-    // MO(7),          KC_Q,           KC_W,           KC_E,           KC_R,           KC_T,           KC_TRANSPARENT,                                 KC_PAGE_UP,     KC_Y,           KC_U,           KC_I,           KC_O,           KC_P,           KC_QUOTE,
-    // MO(2),          KC_A,           KC_S,           KC_D,           KC_F,           KC_G,                                                                           KC_H,           KC_J,           KC_K,           KC_L,           KC_SCLN,        KC_RIGHT_SHIFT,
-    // KC_LEFT_SHIFT,  KC_Z,           KC_X,           KC_C,           KC_V,           KC_B,           KC_TRANSPARENT,                                 KC_PGDN,        KC_N,           KC_M,           KC_COMMA,       KC_DOT,         KC_SLASH,       KC_LEFT_CTRL,
-    // TG(1),          KC_TRANSPARENT, MO(6),          MO(5),          MO(3),                                                                                                          MO(4),          KC_LEFT_CTRL,   KC_F16,         KC_RABK,        KC_TRANSPARENT,
-    //                                                                                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
-    //                                                                                                                 KC_PAGE_UP,     KC_TRANSPARENT,
-    //                                                                                 KC_LEFT_CTRL,   KC_LEFT_ALT,    KC_LEFT_GUI,    KC_TRANSPARENT, KC_LEFT_GUI,    KC_SPACE
   ),
   [1] = LAYOUT_ergodox_pretty( // Layer 1: GAMING MODE game mode
 //,--------.  ,--------.  ,--------.  ,--------.  ,--------.  ,--------.  ,--------.        ,-------.  ,--------.  ,--------.  ,--------.  ,--------.  ,--------.  ,--------.
-   TSPT,       TSPT,       TSPT,       TSPT,       TSPT,       TSPT,       TSPT,   /*     */TSPT,       TSPT,       TSPT,       TSPT,       TSPT,       TSPT,       TSPT,
+   TSPT,       TSPT,       TSPT,       TSPT,       TSPT,       TSPT,       TSPT,   /*     */TSPT,       TSPT,       TSPT,       TSPT,       TSPT,       TSPT,       TG(1),
 //| ESCAPE |  | Abv.Q  |  | Abv.W  |  | Abv.E  |  | Abv.R  |  | Abv.T  |  | Abv.   |       | Ab.PgUp|  | Abv.Y  |  | Abv.U  |  | Abv.I  |  | Abv.O  |  | Abv.P  |  | Abv.Qt |
 //|        |  |        |  |        |  |        |  |        |  |        |  |        |       |        |  |        |  |        |  |        |  |        |  |        |  |        |
 //|--------|  |--------|  |--------|  |--------|  |--------|  |--------|  |--------|       |--------|  |--------|  |--------|  |--------|  |--------|  |--------|  |--------|
@@ -161,7 +153,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 //|        |  |        |  |        |  |        |  |        |  |        |  |        |       |        |  |        |  |        |  |        |  |        |  |        |  |        |
 //|--------|  |--------|  |--------|  |--------|  |--------|  |--------|  |--------|       |--------|  |________|  |--------|  |--------|  |--------|  |--------|  |--------|
    TSPT,       TSPT,       MO(6),      MO(5),      MO(3),                                                           MO(4),      KC_LCTRL,   TSPT,       TSPT,       TSPT,
-//| GAMING |  |        |  | LT3    |  | LT2[B] |  | LT1    |                                                       | RT1(nums  | LCTRL  |  | f16    |  |        |  |        |
+//|        |  |        |  | LT3    |  | LT2[B] |  | LT1    |                                                       | RT1(nums  | LCTRL  |  | f16    |  |        |  |        |
 //|        |  |        |  |(macros)|  |(harpoon|  | (syms) |                                                       | (&LT2M))  |        |  |        |  |        |  |        |
 //|--------|  |--------|  |--------|  |--------|  |--------|                                                       |--------|  |--------|  |------- |  |--------|  |--------|
 //                                                            ,--------.  ,---------.       ,--------.  ,--------.
@@ -170,32 +162,24 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 //                                                ,--------.  |--------|  |---------|       |--------|  |--------|  ,---------.
 /*                                                |        |  |        | */TSPT,   /*      */TSPT,  //  |        |  |         |
 //                                                | =space |  | =NUMS  |  | UNUSED  |       | UNUSED |  | UNUSED |  |         |
-//                                                |        |  |        |  |--------/|       |--------|  |        |  |        *|
+//                                                |        |  |GAME NUMS  |--------/|       |--------|  |        |  |        *|
                                                    KC_SPACE,   MO(11),     KC_LALT, /*     */TSPT,       KC_LWIN,    KC_SPACE//
 //                                                | LCTRL  |  | LALT   |  | LWIN    |       |        |  | LWIN   |  | SPACE   |
 //                                                |--------|  |--------|  |---------|       |--------|  |--------|  |---------|
-    // TSPT, TSPT, TSPT, TSPT, TSPT, TSPT, TSPT,                                 TSPT, TSPT, TSPT, TSPT, TSPT, TSPT, TSPT,
-    // TSPT, TSPT, TSPT, TSPT, TSPT, TSPT, TSPT,                                 TSPT, TSPT, TSPT, TSPT, TSPT, TSPT, TSPT,
-    // KC_LEFT_CTRL,   TSPT, TSPT, TSPT, TSPT, TSPT,                                                                 TSPT, TSPT, TSPT, TSPT, TSPT, TSPT,
-    // KC_LEFT_SHIFT,  TSPT, TSPT, TSPT, TSPT, TSPT, MO(11),                                         TSPT, TSPT, TSPT, TSPT, TSPT, TSPT, TSPT,
-    // TSPT, TSPT, TSPT, TSPT, TSPT,                                                                                                 TSPT, TSPT, TSPT, TSPT, TSPT,
-    //                                                                                                 TSPT, TSPT, TSPT, TSPT,
-    //                                                                                                                 TSPT, TSPT,
-    //                                                                                 KC_SPACE,       MO(11),         KC_LEFT_ALT,    TSPT, TSPT, TSPT
   ),
   [2] = LAYOUT_ergodox_pretty( // Layer 2: LP1 (CAPS)
 //,--------.  ,--------.  ,--------.  ,--------.  ,--------.  ,--------.  ,--------.        ,-------.  ,--------.  ,--------.  ,--------.  ,--------.  ,--------.  ,--------.
-   TSPT,       TSPT,       TSPT,       TSPT,       TSPT,       TSPT,       TSPT,   /*     */TSPT,       TSPT,       TSPT,       TSPT,       TSPT,       TSPT,       QK_BOOT,
+   TG(1),       TSPT,       TSPT,       TSPT,       TSPT,       TSPT,       TSPT,   /*     */TSPT,       TSPT,       TSPT,       TSPT,       TSPT,       TSPT,       QK_BOOT,
 //| ESCAPE |  | Abv.Q  |  | Abv.W  |  | Abv.E  |  | Abv.R  |  | Abv.T  |  | Abv.   |       | Ab.PgUp|  | Abv.Y  |  | Abv.U  |  | Abv.I  |  | Abv.O  |  | Abv.P  |  | Abv.Qt |
-//|        |  |        |  |        |  |        |  |        |  |        |  |        |       |        |  |        |  |        |  |        |  |        |  |        |  |(RESET KB!!!!!!!!)
+//| (GAME MODE)        |  |        |  |        |  |        |  |        |  |        |       |        |  |        |  |        |  |        |  |        |  |        |  |(RESET KB!!!!!!!!)
 //|--------|  |--------|  |--------|  |--------|  |--------|  |--------|  |--------|       |--------|  |--------|  |--------|  |--------|  |--------|  |--------|  |--------|
    MO(7),      TSPT,       TSPT,       ST_MACRO_2, TSPT,       ST_MACRO_3,  TSPT,  /*     */KC_PGUP,    TSPT,       TSPT,       KC_LPRN,    KC_RPRN,    ST_MACRO_1, KC_DQUO,
 //| LP2    |  | Q      |  | W         | E python  | R      |  | T      |  | jeff   |       |   PgUp |  | Y      |  | U      |  | I      |  | O      |  | P      |  | '''''
-//| (FKEYS)|  |        |  |           (enumerate)             |        |  |        |       |        |  |        |  |        |  | (((((  |  | )))))  |  (add print) |  """   (DOUBLE QUOTES)
+//| (FKEYS)|  |        |  |           (enumerate<NOT SURE IF I HIT     |  |        |       |        |  |        |  |        |  | (((((  |  | )))))  |  (add print) |  """   (DOUBLE QUOTES)
 //|--------|  |--------|  |--------|  |--------|  |--------|  |--------|  |        |       |        |  |--------|  |--------|  |--------|  |--------|  |--------|  |--------|
-   TSPT,       ST_MACRO_0, KC_BSPC,   KC_DELETE, ST_MACRO_1, KC_HOME,  /*-------|       |_______*/   KC_LEFT,    KC_DOWN,    KC_UP,      KC_RIGHT,   KC_END,     KC_RSHIFT,
-//| LP1    |  | A python! | S=BACK |  | D=DEL  |  | F PYTHON  | G      |  |        |       |        |  | H      |  | J      |  | K      |  | L      |  | ;;;;;  |  | RSHFT  |
-//| (CAPS) |  | (add arg) | SPACE  |  |        |  |=ADD PRINTF| =HOME  |  |        |       |        |  |=Left<< |  |=DnVVVV |  |=Up^^^^ |  |=Rgt>>> |  | End/DownRight      |
+   TSPT,       ST_MACRO_0, KC_BSPC,   KC_DELETE,TSPT/*ST_MACRO_1*/, KC_HOME,/*-----|       |_______*/   KC_LEFT,    KC_DOWN,    KC_UP,      KC_RIGHT,   KC_END,     KC_RSHIFT,
+//| LP1    |  | A python! | S=BACK |  | D=DEL  |  | F BAD***  | G      |  |        |       |        |  | H      |  | J      |  | K      |  | L      |  | ;;;;;  |  | RSHFT  |
+//| (CAPS) |  | (add arg) | SPACE  |  |        |  |=2ez2hit!!!| =HOME  |  |        |       |        |  |=Left<< |  |=DnVVVV |  |=Up^^^^ |  |=Rgt>>> |  | End/DownRight      |
 //|--------|  |--------|  |--------|  |--------|  |--------|  |--------|  |        |       |        |  |--------|  |--------|  |--------|  |--------|  |----(grapple)-------|
    KC_LSHIFT,  TSPT,       ST_MACRO_4, ST_MACRO_5, ST_MACRO_6, ST_MACRO_7, TSPT,   /*     */KC_PGDN,    TSPT,       TSPT,       TSPT,       TSPT,       TSPT,       TSPT,
 //| LSHFT  |  | Z      |  | X      |  | C      |  | V      |  | B(alt+G)  |        |       |   PgDn |  | N      |  | M      |  |,,,,,   |  | .....  |  | /////  |  | LCTRL  |
@@ -207,15 +191,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 //|--------|  |--------|  |--------|  |--------|  |--------|                                                       |--------|  |--------|  |------- |  |--------|  |--------|
 //                                                            .--------.  ,---------.       ,--------.  ,--------.
                                                                TSPT,       TSPT,   /*      */TSPT,       TSPT,
-//                                                            | UNUSED |  | UNUSED  |       | UNUSED |  | UNUSED |
-//                                                ,--------.  |--------|  |---------|       |--------|  |--------|  ,---------.
-/*                                                |        |  |        | */TSPT,   /*      */TSPT,  //  |        |  |         |
+//                                                            | UNUSED |  | UNUSED  |       | UNUSED |  | UNUSED |                 NOTES about CAPS:
+//                                                ,--------.  |--------|  |---------|       |--------|  |--------|  ,---------.      - caps+f right next to DEL and HOME is way too easy to hit to use it for python fstring...
+/*                                                |        |  |        | */TSPT,   /*      */TSPT,  //  |        |  |         |      - i think its a useful slot but it should be reserved for a symbol or something...
 //                                                | [space]|  | [nums] |  | UNUSED  |       | UNUSED |  | UNUSED |  |         |
 //                                                |        |  |        |  |--------/|       |--------|  |        |  |         |
                                                    KC_LCTRL,   KC_LALT,    KC_LWIN, /*     */TSPT,       KC_LWIN,    KC_SPACE//
 //                                                | LCTRL  |  | LALT   |  | LWIN    |       |        |  | LWIN   |  | SPACE   |
 //                                                |        |  |        |  |         |       |        |  |        |  |         |
 //                                                |--------|  |--------|  |---------|       |--------|  |--------|  |---------|
+
+
     // TSPT, TSPT, TSPT, TSPT, TSPT, TSPT, TSPT,                                 TSPT, TSPT, TSPT, TSPT, TSPT, TSPT, QK_BOOT,
     // TSPT, TSPT, ST_MACRO_0,     ST_MACRO_1,     ST_MACRO_2,     ST_MACRO_3,     TSPT,                                 TSPT, TSPT, TSPT, KC_LPRN,        KC_RPRN,        TSPT, KC_DQUO,
     // TSPT, TSPT, KC_BSPC,        KC_DELETE,      LCTL(KC_BSPC),  KC_HOME,                                                                        KC_LEFT,        KC_DOWN,        KC_UP,          KC_RIGHT,       KC_END,         TSPT,
@@ -239,7 +225,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 //| LP1    |  | A      |  | S      |  | D      |  | F      |  | G      |  |        |       |        |  | H      |  | J      |  | K      |  | L      |  | ;      |  | RSHFT  |
 //| (CAPS) |  (Save all)  (C-Space)|  | (S-TAB)|  |(TAB)   |  |        |  |        |       |        |  |(DISABLED) | ------ |  | (+++++)|  | ====== |  |(DISABLED) |        |
 //|--------|  |--------|  |--------|  |--------|  |--------|  |--------|  |        |       |        |  |--------|  |--------|  |--------|  |--------|  |--------|  |--------|
-   KC_LSHIFT,  TSPT,       TSPT,       KC_CAPS,    TSPT,     ST_MACRO_10,  TSPT,   /*     */TSPT,       TSPT,       KC_AMPR,    KC_LCBR,    KC_RCBR,    TSPT,       TSPT,
+   KC_LSHIFT,  ST_MACRO_1, TSPT,       KC_CAPS,    TSPT,     ST_MACRO_10,  TSPT,   /*     */TSPT,       TSPT,       KC_AMPR,    KC_LCBR,    KC_RCBR,    TSPT,       TSPT,
 //| LSHFT  |  | Z      |  | X      |  | C      |  | V      |  | B      |  |        |       |   PgDn |  | N      |  | M      |  |,       |  | .....  |  | /////  |  | LCTRL  |
 //|        |  |        |  |        |  |(CAPS LOCK)|        |  |(MACRO 10) |        |       |        |  |        |  | &&&&&& |  |({{{{{) |  |(}}}}} )|  |        |  |        |
 //|--------|  |--------|  |--------|  |--------|  |--------|  (bndx)---|  |--------|       |--------|  |________|  |--------|  |--------|  |--------|  |--------|  |--------|
@@ -528,15 +514,46 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //                                                                TSPT, TSPT,
     //                                                        TSPT, TSPT, TSPT, TSPT, TSPT, TSPT
   ),
-  [11] = LAYOUT_ergodox_pretty(
-    TSPT, TSPT, TSPT, TSPT, TSPT, TSPT, TSPT,                                 TSPT, TSPT, TSPT, TSPT, TSPT, TSPT, TSPT,
-    TSPT, KC_6,KC_7,KC_8,KC_9,KC_0,TSPT,                                 TSPT, TSPT, TSPT, TSPT, TSPT, TSPT, TSPT,
-    TSPT, KC_1,KC_2,KC_3,KC_4,KC_5,                                                                           TSPT, TSPT, TSPT, TSPT, TSPT, TSPT,
-    TSPT, KC_7,           KC_8,           KC_9,           TSPT, TSPT, TSPT,                                 TSPT, TSPT, TSPT, TSPT, TSPT, TSPT, TSPT,
-    TSPT, TSPT, TSPT, TSPT, TSPT,                                                                                                 TSPT, TSPT, TSPT, TSPT, TSPT,
-                                                                                                    TSPT, TSPT, TSPT, TSPT,
-                                                                                                                    TSPT, TSPT,
-                                                                                    TSPT, TSPT, TSPT, TSPT, TSPT, TSPT
+  [11] = LAYOUT_ergodox_pretty( // Layer 11: game nums gamenums
+//,--------.  ,--------.  ,--------.  ,--------.  ,--------.  ,--------.  ,--------.        ,-------.  ,--------.  ,--------.  ,--------.  ,--------.  ,--------.  ,--------.
+   TSPT,       TSPT,       TSPT,       TSPT,       TSPT,       TSPT,       TSPT,   /*     */TSPT,      TSPT,       TSPT,       TSPT,       TSPT,       TSPT,       TSPT,
+//| ESCAPE |  | Abv.Q  |  | Abv.W  |  | Abv.E  |  | Abv.R  |  | Abv.T  |  | Abv.   |       | Ab.PgUp|  | Abv.Y  |  | Abv.U  |  | Abv.I  |  | Abv.O  |  | Abv.P  |  | Abv.Qt |
+//|        |  |        |  |        |  |        |  |        |  |        |  |        |       |        |  |        |  |        |  |        |  |        |  |        |  |        |
+//|--------|  |--------|  |--------|  |--------|  |--------|  |--------|  |--------|       |--------|  |--------|  |--------|  |--------|  |--------|  |--------|  |--------|
+   KC_NO,      KC_0,       KC_6,       KC_7,       KC_8,        KC_9,       TSPT,  /*     */TSPT,       TSPT,       TSPT,       TSPT,       TSPT,       TSPT,       TSPT,
+//| LP2    |  | Q      |  | W      |  | E      |  | R      |  | T      |  | jeff   |       |   PgUp |  | Y      |  | U      |  | I      |  | O      |  | P      |  | '''''  |
+//| (FKEYS)|  |        |  (PICKAXE)|  |        |  |        |  |(TORCH) |  |        |       |        |  |        |  |        |  |        |  |        |  |        |  |        |
+//|--------|  |--------|  |--------|  |--------|  |--------|  |--------|  |        |       |        |  |--------|  |--------|  |--------|  |--------|  |--------|  |--------|
+   KC_NO,      KC_1,       KC_2,       KC_3,       KC_4,       KC_5,      /*-------|       |_______*/   TSPT,       TSPT,       TSPT,       TSPT,       TSPT,       KC_RSHIFT,
+//| LP1    |  | A      |  | S      |  | D      |  | F      |  | G      |  |        |       |        |  | H      |  | J      |  | K      |  | L      |  | ;;;;;  |  | RSHFT  |
+//| (CAPS) |  | (AXE)  |  | (SHOVEL)  | (idk)  |  |(FOOD)  |  |(Blocks)|  |        |       |        |  |        |  |        |  |        |  |        |  |        |  |        |
+//|--------|  |--------|  |--------|  |--------|  |--------|  |--------|  |        |       |        |  |--------|  |--------|  |--------|  |--------|  |--------|  |--------|
+   KC_LSHIFT,  TSPT,       TSPT,       TSPT,       TSPT,       TSPT,       TSPT,   /*     */TSPT,      TSPT,       TSPT,       TSPT,       TSPT,       TSPT,       TSPT,
+//| LSHFT  |  | Z      |  | X      |  | C      |  | V      |  | B      |  |        |       |   PgDn |  | N      |  | M      |  |,,,,,   |  | .....  |  | /////  |  | LCTRL  |
+//|        |  |        |  |        |  |        |  |        |  |        |  |        |       |        |  |        |  |        |  |        |  |        |  |        |  |        |
+//|--------|  |--------|  |--------|  |--------|  |--------|  |--------|  |--------|       |--------|  |________|  |--------|  |--------|  |--------|  |--------|  |--------|
+   TSPT,       TSPT,       MO(6),      MO(5),      MO(3),                                                           MO(4),      KC_LCTRL,   TSPT,       TSPT,       TSPT,
+//| GAMING |  |        |  | LT3    |  | LT2[B] |  | LT1    |                                                       | RT1(nums  | LCTRL  |  | f16    |  |        |  |        |
+//| TG(1)  |  |        |  |(macros)|  |(harpoon|  | (syms) |                                                       | (&LT2M))  |        |  |        |  |        |  |        |
+//|--------|  |--------|  |--------|  |--------|  |--------|                                                       |--------|  |--------|  |------- |  |--------|  |--------|
+//                                                            ,--------.  ,---------.       ,--------.  ,--------.
+                                                               TSPT,       TSPT,   /*      */TSPT,       TSPT,
+//                                                            | UNUSED |  | UNUSED  |       | UNUSED |  | UNUSED |
+//                                                ,--------.  |--------|  |---------|       |--------|  |--------|  ,---------.
+/*                                                |        |  |        | */TSPT,   /*      */TSPT,  //  |        |  |         |
+//                                                |        |  |        |  | UNUSED  |       | UNUSED |  | UNUSED |  |         |
+//                                                |        |  |        |  |--------/|       |--------|  |        |  |         |
+                                                   KC_LCTRL,   KC_LALT,    KC_LWIN, /*     */TSPT,       KC_LWIN,    KC_SPACE
+//                                                | LCTRL  |  | LALT   |  | LWIN    |       |        |  | LWIN   |  | SPACE   |
+//                                                |--------|  |--------|  |---------|       |--------|  |--------|  |---------|
+    // TSPT, TSPT, TSPT, TSPT, TSPT, TSPT, TSPT,                                 TSPT, TSPT, TSPT, TSPT, TSPT, TSPT, TSPT,
+    // TSPT, KC_6,KC_7,KC_8,KC_9,KC_0,TSPT,                                 TSPT, TSPT, TSPT, TSPT, TSPT, TSPT, TSPT,
+    // TSPT, KC_1,KC_2,KC_3,KC_4,KC_5,                                                                           TSPT, TSPT, TSPT, TSPT, TSPT, TSPT,
+    // TSPT, KC_7,           KC_8,           KC_9,           TSPT, TSPT, TSPT,                                 TSPT, TSPT, TSPT, TSPT, TSPT, TSPT, TSPT,
+    // TSPT, TSPT, TSPT, TSPT, TSPT,                                                                                                 TSPT, TSPT, TSPT, TSPT, TSPT,
+    //                                                                                                 TSPT, TSPT, TSPT, TSPT,
+    //                                                                                                                 TSPT, TSPT,
+    //                                                                                 TSPT, TSPT, TSPT, TSPT, TSPT, TSPT
   ),
 };
 
@@ -617,29 +634,29 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         // C VERSION:
         // go from LOG_DBG(" some_func(some_var)|") to LOG_DBG(" some_func(some_var): %d, |", some_func(some_var))
         // and from LOG_DBG(" blah: %d, func(a)|", blah) to LOG_DBG(" blah: %d, func(a): %d, |", blah, func(a))
-        SEND_STRING(
+        // SEND_STRING(
             // ESC D30 "a: %d, " ESC_30 "F:hyT $a;" ESC_30 "F)i, " ESC_30 "p:s/;;/;/e" CR_30
-            ESC D30 "a: %d, " ESC_30 "F:hvT " D100 "y$a;" ESC_30 "F)i, " ESC_30 "p:s/;;/;/e" CR_30 "F F\""
+            // ESC D30 "a: %d, " ESC_30 "F:hvT " D100 "y$a;" ESC_30 "F)i, " ESC_30 "p:s/;;/;/e" CR_30 "F F\""
 // aLOG_DBG("blah: %d, ");;
-        );
+        // );
         // Python version:
         //// go from print(f' some_var') or
         //// go from print(f' some_func(some_var)|')
         ////                                     ^cursor
         //// to print(f' some_func(some_var): {some_func(some_var)),')
         //// via `:<Esc>hvF<Space>lyf:a<Space>{}<Esc>hpf}a,`           ^Cursor
-        //SEND_STRING( // :<Esc>
-        //    SS_TAP(X_ESCAPE) SS_DELAY(30) SS_TAP(X_A) SS_DELAY(20) SS_LSFT(SS_TAP(X_SCOLON)) SS_DELAY(20) SS_TAP(X_ESCAPE) SS_DELAY(50)
-        //    //                 hvF<Space>
-        //    SS_TAP(X_H) SS_DELAY(20) SS_TAP(X_V) SS_DELAY(5) SS_LSFT(SS_TAP(X_F)) SS_DELAY(15) SS_TAP(X_SPACE) SS_DELAY(100)
-        //    //                           lyf:
-        //    SS_TAP(X_L) SS_DELAY(30) SS_TAP(X_Y) SS_DELAY(300) "f:"/*SS_TAP(X_F) SS_DELAY(15) SS_LSFT(SS_TAP(X_SCOLON))*/ SS_DELAY(10)
-        //    //                               a<Space>{}
-        //    SS_TAP(X_A) SS_DELAY(150) SS_TAP(X_SPACE) SS_DELAY(10) LCURLY SS_DELAY(10) RCURLY SS_DELAY(10)
-        //    //                                         <Esc>hpf}a,
-        //    SS_TAP(X_ESCAPE) SS_DELAY(100) SS_TAP(X_H) SS_DELAY(10) SS_TAP(X_P) SS_DELAY(40)
-        //    SS_DELAY(200) "f}"/* SS_TAP(X_F) SS_DELAY(40) RCURLY */ SS_DELAY(80) SS_TAP(X_A) SS_DELAY(40) SS_TAP(X_COMMA)
-        //);
+        SEND_STRING( // :<Esc>
+           SS_TAP(X_ESCAPE) SS_DELAY(30) SS_TAP(X_A) SS_DELAY(20) SS_LSFT(SS_TAP(X_SCOLON)) SS_DELAY(20) SS_TAP(X_ESCAPE) SS_DELAY(50)
+           //                 hvF<Space>
+           SS_TAP(X_H) SS_DELAY(20) SS_TAP(X_V) SS_DELAY(5) SS_LSFT(SS_TAP(X_F)) SS_DELAY(15) SS_TAP(X_SPACE) SS_DELAY(100)
+           //                           lyf:
+           SS_TAP(X_L) SS_DELAY(30) SS_TAP(X_Y) SS_DELAY(300) "f:"/*SS_TAP(X_F) SS_DELAY(15) SS_LSFT(SS_TAP(X_SCOLON))*/ SS_DELAY(10)
+           //                               a<Space>{}
+           SS_TAP(X_A) SS_DELAY(150) SS_TAP(X_SPACE) SS_DELAY(10) LCURLY SS_DELAY(10) RCURLY SS_DELAY(10)
+           //                                         <Esc>hpf}a,
+           SS_TAP(X_ESCAPE) SS_DELAY(100) SS_TAP(X_H) SS_DELAY(10) SS_TAP(X_P) SS_DELAY(40)
+           SS_DELAY(200) "f}"/* SS_TAP(X_F) SS_DELAY(40) RCURLY */ SS_DELAY(80) SS_TAP(X_A) SS_DELAY(40) SS_TAP(X_COMMA)
+        );
         // DEPRECATED OLD DEF:
         // caps + w pressed -> triple BS
         // SEND_STRING(SS_TAP(X_BSPACE) SS_DELAY(3) SS_TAP(X_BSPACE) SS_DELAY(3) SS_TAP(X_BSPACE));
@@ -647,8 +664,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     break;
     case ST_MACRO_1: // Caps + p: python print(f' ')
     if (record->event.pressed) {
+    // sorry idk what it is but this shit is way too easy to hit by accident... this binding should be reserved for
+    // like symbols or something...
       // C VERSION:
-      SEND_STRING("aLOG_DBG(\" \")" ESC_30 ":s/aLOG/LOG/e" CR_30 "hi");
+      // SEND_STRING("aLOG_DBG(\" \")" ESC_30 ":s/aLOG/LOG/e" CR_30 "hi");
 
       // Python VERSION:
       //// aprint(f' ')<Esc>hhi
@@ -659,6 +678,16 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       //  // <Esc>hhi
       //  SS_TAP(X_ESCAPE) SS_DELAY(20) SS_TAP(X_H) SS_DELAY(20) SS_TAP(X_I)
       //);
+      //
+      //
+      // NOw im moving this to LT1=syms + Z kinda like A-z
+      //
+      // its normally gonna just be A-z, ctrl+c, up, enter
+      //
+      // but for now im also adding in a Win+shift+L to move the spawned window!
+      SEND_STRING( // aprint
+          SS_LALT(SS_TAP(X_Z)) SS_DELAY(400) SS_LCTL(SS_TAP(X_C)) SS_DELAY(100) SS_TAP(X_UP) SS_DELAY(100) SS_TAP(X_ENTER) SS_DELAY(1000) /*SS_LWIN(SS_LSFT(SS_TAP(X_L))) SS_DELAY(500)*/ SS_LWIN(SS_TAP(X_H))
+      );
 
     }
     break;
